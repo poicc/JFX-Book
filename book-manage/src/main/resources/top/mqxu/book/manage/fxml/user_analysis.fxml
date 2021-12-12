@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="用户数据统计分析" styleClass="font-title" AnchorPane.topAnchor="10"
+           AnchorPane.leftAnchor="50"/>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="top.mqxu.book.manage.controller.CategoryController">
+    <HBox AnchorPane.topAnchor="10" AnchorPane.leftAnchor="20" spacing="20">
+        <Button text="添加图书类别" styleClass="green-theme" onAction="#addCategory"/>
+    </HBox>
+    <!--表格视图，用来显示数据库中查询到的图书类别-->
+    <TableView fx:id="categoryTable" prefWidth="700"
+               AnchorPane.leftAnchor="20" AnchorPane.topAnchor="50">
+        <columns>
+            <!--ID列-->
+            <TableColumn text="ID">
+                <!--绑定图书类别实体类中的id属性-->
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+            <!--类别名称列-->
+            <TableColumn text="类别名称">
+                <!--绑定图书类别实体类中的name属性-->
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</AnchorPane>
